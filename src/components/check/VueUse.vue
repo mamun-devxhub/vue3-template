@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useMouse, onClickOutside } from '@vueuse/core'
-import { useToast } from 'vue-toastification'
+// import { useToast } from 'vue-toastification'
 
-const toast = useToast()
+// const toast = useToast()
 const { x, y } = useMouse()
 
 const el = ref(null)
 
 function close(data: any) {
   console.log('Outside Clicked', data)
-  toast.clear()
-  toast.success('Outside clicked Success of the Red Box')
+  // toast.clear()
+  // toast.success('Outside clicked Success of the Red Box')
 }
 
 onClickOutside(el, close)
@@ -21,13 +21,13 @@ onClickOutside(el, close)
   <div>
     <h1>VueUse Test</h1>
     <p>Mouse position: {{ x }}x{{ y }}</p>
-    <div class="outside mt-5" ref="el">Click Outside of Me</div>
+    <div class="outside mt-5" ref="el">Click Outside of Me and see console</div>
   </div>
 </template>
 
 <style scoped>
 .outside {
-  width: 200px;
+  width: 300px;
   height: 100px;
   background-color: red;
   color: white;
