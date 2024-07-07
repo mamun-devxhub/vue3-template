@@ -9,8 +9,7 @@ import VueUse from '../components/check/VueUse.vue'
   <div class="home mt-5 mb-5">
     <h1>This is Home Page</h1>
     <div>
-      <TButton>TButton</TButton>
-      <MButton>MButton</MButton>
+      <DButton>DButton</DButton>
     </div>
     <FontAwesome class="mt-5" />
     <button class="mt-5">This is Button</button>

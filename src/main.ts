@@ -15,7 +15,7 @@ import { all } from '@vee-validate/rules'
 
 import App from './App.vue'
 import router from './router'
-import MComponents from "@mdxh/vue-tailwindcss" 
+import DComponents from "@mdxh/vue-tailwindcss" 
 
 // Font Awesome
 library.add(fas, fab, far)
@@ -209,6 +209,6 @@ app.component('fa-icon', FontAwesomeIcon)
 app.use(createPinia())
 app.use(router)
 app.use(Toast, options)
-app.use(MComponents)
+app.use(DComponents)
 
 app.mount('#app')
